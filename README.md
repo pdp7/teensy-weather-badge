@@ -3,5 +3,6 @@ Weather badge with Teensy 3.2 or LC, Adafruit 128x32 OLED (i2c) and Adafruit BME
 
 ## License
 This project released under the CERN Open Hardware v1.2 License
-### Note: teensy-weather-badge.ino contains code written by Limor Fried & Kevin Townsend for Adafruit Industries and is covered by BSD license
+
+**Note:** `teensy-weather-badge.ino` contains code written by Limor Fried & Kevin Townsend for Adafruit Industries and is covered by BSD license
 
