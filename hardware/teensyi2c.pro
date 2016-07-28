@@ -1,4 +1,4 @@
-update=Mon 16 May 2016 09:37:02 PM CDT
+update=Wed 27 Jul 2016 11:29:49 PM CDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=/home/pdp7/dev/oshpark/wickerlib/libraries/wickerlib
+LibName31=/home/pdp7/kicad/libraries/kicad-ESP8266/ESP8266
