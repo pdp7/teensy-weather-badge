@@ -140,82 +140,6 @@ F 10 "Not Verified" V 4975 4850 50  0001 C CIN "Verified"
 	1    5225 3700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5825 3225 7350 3225
-Wire Wire Line
-	5975 3325 7350 3325
-Wire Wire Line
-	6150 3425 7350 3425
-Wire Wire Line
-	6775 3525 7350 3525
-Wire Wire Line
-	7350 3625 6950 3625
-Wire Wire Line
-	7350 3725 6900 3725
-Wire Wire Line
-	5825 3225 5825 4150
-Wire Wire Line
-	5825 4150 5475 4150
-Wire Wire Line
-	5975 3325 5975 4250
-Wire Wire Line
-	5975 4250 5475 4250
-Wire Wire Line
-	6150 3425 6150 2750
-Wire Wire Line
-	6150 2750 5475 2750
-Wire Wire Line
-	6775 3525 6775 5250
-Wire Wire Line
-	5475 5150 11050 5150
-Wire Wire Line
-	6900 3725 6900 2150
-Wire Wire Line
-	8525 3150 8200 3150
-Wire Wire Line
-	8200 3150 8200 2150
-Connection ~ 6900 2150
-Wire Wire Line
-	8525 3350 8200 3350
-Wire Wire Line
-	8200 3350 8200 5150
-Connection ~ 6775 5150
-Wire Wire Line
-	8525 3450 7725 3450
-Wire Wire Line
-	7725 3450 7725 3900
-Wire Wire Line
-	7725 3900 5975 3900
-Connection ~ 5975 3900
-Wire Wire Line
-	8525 3650 7775 3650
-Wire Wire Line
-	7775 3650 7775 4025
-Wire Wire Line
-	7775 4025 5825 4025
-Connection ~ 5825 4025
-Wire Wire Line
-	8525 3250 8200 3250
-Wire Wire Line
-	8300 3550 8525 3550
-Wire Wire Line
-	8525 3750 8300 3750
-Wire Wire Line
-	8300 3750 8300 3725
-Wire Wire Line
-	10525 4275 11050 4275
-Wire Wire Line
-	11050 4275 11050 5150
-Connection ~ 8200 5150
-Wire Wire Line
-	8625 4575 8375 4575
-Wire Wire Line
-	8375 4575 8375 3900
-Wire Wire Line
-	8375 3900 9725 3900
-Wire Wire Line
-	9725 3900 9725 2150
-Connection ~ 8200 2150
 $Comp
 L R R1
 U 1 1 57999054
@@ -227,25 +151,6 @@ F 3 "" H 8500 4225 50  0000 C CNN
 	1    8500 4225
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8625 4375 8500 4375
-Wire Wire Line
-	8500 4075 8500 3900
-Connection ~ 8500 3900
-Wire Wire Line
-	5475 3350 5700 3350
-Wire Wire Line
-	5700 3350 5700 4275
-Wire Wire Line
-	5700 4275 8625 4275
-Wire Wire Line
-	5475 3450 5600 3450
-Wire Wire Line
-	5600 3450 5600 4925
-Wire Wire Line
-	5600 4925 10525 4925
-Wire Wire Line
-	10525 4925 10525 4575
 $Comp
 L HEADER-MALE-1POS-TH-1x01 RST1
 U 1 1 579993C8
@@ -300,8 +205,6 @@ F 10 "Not Verified" H 10725 4125 50  0001 C CIN "Verified"
 	1    10725 4475
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6775 5250 5475 5250
 $Comp
 L HEADER-MALE-1POS-TH-1x01 GND1
 U 1 1 57999AE9
@@ -338,17 +241,7 @@ F 10 "Not Verified" H 6900 1600 50  0001 C CIN "Verified"
 	1    6900 1950
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5700 2200 5525 2200
-Wire Wire Line
-	5700 2100 5700 2200
-Wire Wire Line
-	9725 2150 5700 2150
-Wire Wire Line
-	5525 2100 5700 2100
-Connection ~ 5700 2150
 NoConn ~ 8200 3250
-NoConn ~ 8300 3550
 NoConn ~ 8300 3725
 NoConn ~ 6950 3625
 NoConn ~ 5475 2450
@@ -364,7 +257,6 @@ NoConn ~ 5475 3650
 NoConn ~ 5475 3750
 NoConn ~ 5475 3850
 NoConn ~ 5475 4050
-NoConn ~ 5475 4350
 NoConn ~ 5475 4450
 NoConn ~ 5475 4550
 NoConn ~ 5475 4650
@@ -375,20 +267,151 @@ NoConn ~ 5475 5350
 NoConn ~ 5525 2300
 NoConn ~ 5525 2000
 $Comp
-L CAPSENSE_CIRCLE CAP?
+L CAPSENSE_CIRCLE CAP1
 U 1 1 5799AACF
 P 6175 4525
-F 0 "CAP?" H 6425 4625 60  0000 L CNN
+F 0 "CAP1" H 6425 4625 60  0000 L CNN
 F 1 "CAPSENSE_CIRCLE" H 6425 4425 60  0000 L CNN
-F 2 "" H 6175 4525 60  0000 C CNN
+F 2 "Wickerlib:CAPSENSE_CIRCLE_D10" H 6175 4525 60  0001 C CNN
 F 3 "" H 6175 4525 60  0000 C CNN
 	1    6175 4525
 	1    0    0    -1  
 $EndComp
+Text Notes 5475 4350 0    47   ~ 0
+SCK
+Text Notes 5475 4250 0    47   ~ 0
+SDA
+NoConn ~ 8300 3550
+Wire Wire Line
+	6150 3425 7350 3425
+Wire Wire Line
+	6775 3525 7350 3525
+Wire Wire Line
+	7350 3625 6950 3625
+Wire Wire Line
+	7350 3725 6900 3725
+Wire Wire Line
+	6150 3425 6150 2750
+Wire Wire Line
+	6150 2750 5475 2750
+Wire Wire Line
+	6775 3525 6775 5250
+Wire Wire Line
+	5475 5150 11050 5150
+Wire Wire Line
+	6900 3725 6900 2150
+Wire Wire Line
+	8525 3150 8200 3150
+Wire Wire Line
+	8200 3150 8200 2150
+Connection ~ 6900 2150
+Wire Wire Line
+	8525 3350 8200 3350
+Wire Wire Line
+	8200 3350 8200 5150
+Connection ~ 6775 5150
+Wire Wire Line
+	8525 3450 7725 3450
+Wire Wire Line
+	7725 3450 7725 3900
+Wire Wire Line
+	7725 3900 5975 3900
+Connection ~ 5975 3900
+Wire Wire Line
+	8525 3650 7775 3650
+Wire Wire Line
+	7775 3650 7775 4025
+Wire Wire Line
+	7775 4025 5825 4025
+Connection ~ 5825 4025
+Wire Wire Line
+	8525 3250 8200 3250
+Wire Wire Line
+	8300 3550 8525 3550
+Wire Wire Line
+	8525 3750 8300 3750
+Wire Wire Line
+	8300 3750 8300 3725
+Wire Wire Line
+	10525 4275 11050 4275
+Wire Wire Line
+	11050 4275 11050 5150
+Connection ~ 8200 5150
+Wire Wire Line
+	8625 4575 8375 4575
+Wire Wire Line
+	8375 4575 8375 3900
+Wire Wire Line
+	8375 3900 9725 3900
+Wire Wire Line
+	9725 2150 9725 3900
+Connection ~ 8200 2150
+Wire Wire Line
+	8625 4375 8500 4375
+Wire Wire Line
+	8500 4075 8500 3900
+Connection ~ 8500 3900
+Wire Wire Line
+	5475 3350 5700 3350
+Wire Wire Line
+	5700 3350 5700 4275
+Wire Wire Line
+	5700 4275 8625 4275
+Wire Wire Line
+	5475 3450 5600 3450
+Wire Wire Line
+	5600 3450 5600 4925
+Wire Wire Line
+	5600 4925 10525 4925
+Wire Wire Line
+	10525 4925 10525 4575
+Wire Wire Line
+	6775 5250 5475 5250
+Wire Wire Line
+	5700 2200 5525 2200
+Wire Wire Line
+	5700 2100 5700 2200
+Wire Wire Line
+	5700 2150 9725 2150
+Wire Wire Line
+	5525 2100 5700 2100
+Connection ~ 5700 2150
 Wire Wire Line
 	5475 3950 5650 3950
 Wire Wire Line
 	5650 3950 5650 4525
 Wire Wire Line
 	5650 4525 5825 4525
+Wire Wire Line
+	5475 4250 5825 4250
+Wire Wire Line
+	5825 4250 5825 3225
+Wire Wire Line
+	5825 3225 7350 3225
+Text Notes 5900 4200 1    47   ~ 0
+SDA
+Text Notes 6250 4025 2    47   ~ 0
+SDA
+Text Notes 7150 4025 2    47   ~ 0
+SDA
+Text Notes 7850 3800 3    47   ~ 0
+SDA
+Text Notes 7950 3650 0    47   ~ 0
+SDA
+Wire Wire Line
+	5475 4350 5975 4350
+Wire Wire Line
+	5975 4350 5975 3325
+Wire Wire Line
+	5975 3325 7350 3325
+Text Notes 6050 4225 1    47   ~ 0
+SCK
+Text Notes 6050 3675 1    47   ~ 0
+SCK
+Text Notes 5900 3675 1    47   ~ 0
+SDA
+Text Notes 6650 3325 2    47   ~ 0
+SCK
+Text Notes 6650 3225 2    47   ~ 0
+SDA
 $EndSCHEMATC
